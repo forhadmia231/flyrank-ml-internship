@@ -1,50 +1,252 @@
-# FlyRank ML Internship — Starter Repo
+# 🚀 FlyRank Machine Learning Internship
 
-**Applied Search Intelligence: Google Search Ranking & Discoverability**
+## Applied Search Intelligence: Google Search Ranking & Discoverability
 
-This is the starting point for the FlyRank ML Internship. You **clone it into your own public
-repo** (one click — *Use this template*), build everything there, and submit that repo URL on
-each assignment in your portal — it's your workspace, your submission, and your portfolio all
-at once. The rhythm is simple: do the work, commit it, submit on the card. Done.
+This repository contains my completed work from the **Machine Learning Internship Program at FlyRank.ai**.
 
-Everything here runs on a small **anonymized** slice of real FlyRank search data. No credentials,
-no private client data, no setup headaches.
+Over the course of the internship, I worked through an end-to-end machine learning workflow using anonymized real-world search data — from research question development and data understanding to feature analysis, modeling, validation, actionable recommendations, and a final capstone.
 
-> **New here?** Two reads: **[SETUP.md](SETUP.md)** (GitHub, Colab, and data access — ten
-> minutes, with every silent pitfall flagged), then **[GUIDE.md](GUIDE.md)** (every file
-> explained, what to edit vs. leave alone, and where your own work goes — five minutes).
+The internship helped me strengthen my practical understanding of Machine Learning, Data Analysis, model evaluation, reproducibility, and communicating ML results for real-world decision-making.
 
 ---
 
-## Quickstart — first win in 2 minutes
+## 👨‍💻 Intern
 
-The fastest path is Google Colab (one click, zero install). Open Notebook 1 and run all cells:
+**Md Forhad Mia**  
+Machine Learning Engineer  
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/notebooks/01_first_look_and_discovery.ipynb?flush_cache=true)
- **Week 1 — Run it, then discover a real truth yourself**
+🎓 B.Sc. in Computer Science & Engineering  
+**Presidency University — 2026**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/notebooks/02_your_first_readable_model.ipynb?flush_cache=true)
- **Week 2 — The model is just a rule you can read**
+### Core Skills
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/notebooks/03_working_with_the_full_release.ipynb?flush_cache=true)
- **Weeks 3+ — The full release (~79M rows) via DuckDB, no download needed** — hosted at
- [`FlyRank/internship-warehouse`](https://huggingface.co/datasets/FlyRank/internship-warehouse) (gated: request access + accept the data-use terms, approval is instant)
+`Python` `SQL` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Jupyter Notebook` `Git` `GitHub`
 
 ---
 
-## Your assignment notebooks — open, fill, save, done
+# 🎯 Internship Focus
 
-Every assignment is one pre-named skeleton notebook in `work/notebooks/`. Click its badge,
-fill the sections in order, then **File → Save a copy in GitHub → OK** — the dialog is
-already pre-filled with your repo and the right path.
+The main focus of this internship was **Applied Search Intelligence** — using Machine Learning and data analysis to understand search performance and identify useful content opportunities.
 
-> **The badges know whose repo they're in.** About 30 seconds after you create your copy, an
-> automatic commit ("Point Colab badges at this copy") rewires every badge in it to open
-> **your** notebooks — with your saved work — instead of the shared read-only ones. Reading
-> this on the shared starter page? The badges below open blank previews; make your copy
-> first ([SETUP.md](SETUP.md), Moment 1).
+Rather than focusing only on model accuracy, the internship emphasized the complete ML workflow:
 
-| Week | Card | Notebook | Open |
+```text
+Problem Framing
+      ↓
+Data Understanding
+      ↓
+Data Cleaning
+      ↓
+Feature Analysis
+      ↓
+Leakage Checking
+      ↓
+Baseline Model
+      ↓
+Machine Learning Model
+      ↓
+Validation & Evaluation
+      ↓
+Failure Analysis
+      ↓
+Actionable Recommendations
+      ↓
+Human Review
+      ↓
+Capstone & Research Communication
+```
+
+---
+
+# 📅 8-Week Internship Journey
+
+## Week 1 — Research Question & Data Discovery
+
+📓 `w01_research_question.ipynb`
+
+I started by exploring the dataset and developing a clear research question.
+
+The focus was on understanding:
+
+- What problem I wanted to investigate
+- What the available data could actually support
+- Which variables might be useful
+- How to turn an initial idea into a measurable ML problem
+
+---
+
+## Week 2 — Machine Learning Task Framing
+
+📓 `w02_ml_task_framing.ipynb`
+
+I converted the research question into a structured Machine Learning task.
+
+This included thinking about:
+
+- The prediction/decision target
+- Inputs and features
+- Expected outputs
+- Evaluation strategy
+- How the model could support a real decision
+
+This week helped me understand that a good ML project starts with **clear problem framing**, not simply choosing an algorithm.
+
+---
+
+## Week 3 — Data Contract & Leakage Analysis
+
+📓 `w03_data_contract.ipynb`  
+📓 `w03_feature_leakage_check.ipynb`
+
+I worked on understanding the structure and limitations of the data before modeling.
+
+Key areas included:
+
+- Understanding feature definitions
+- Checking data quality
+- Identifying potentially unsafe features
+- Detecting feature leakage
+- Separating information that would and would not be available at prediction time
+
+This stage reinforced the importance of building models on valid information rather than accidentally giving them access to future or target-related data.
+
+---
+
+## Week 4 — Signal Audit & Baseline
+
+📓 `w04_signal_audit.ipynb`  
+📓 `w04_baseline_score.ipynb`
+
+I investigated which features contained useful signals and established a baseline for comparison.
+
+The work included:
+
+- Feature exploration
+- Signal analysis
+- Building a transparent baseline
+- Creating a reference point for later models
+
+The baseline provided a simple benchmark so that more complex models could be evaluated against something meaningful.
+
+---
+
+## Week 5 — Machine Learning Model
+
+📓 `w05_model.ipynb`
+
+I moved from baseline analysis to building and evaluating Machine Learning models.
+
+The reference workflow included models such as:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+
+I worked on:
+
+- Preparing model features
+- Training models
+- Evaluating predictions
+- Comparing model performance
+- Understanding model outputs
+
+The objective was not simply to obtain a high score, but to determine whether the learned model provided useful improvement over the baseline.
+
+---
+
+## Week 6 — Validation Audit
+
+📓 `w06_validation_audit.ipynb`
+
+This week focused on testing whether the model results were genuinely trustworthy.
+
+I worked with concepts including:
+
+- Time-aware validation
+- Data leakage checks
+- Failure examples
+- Model limitations
+- Evaluation beyond a single metric
+
+This was one of the most important lessons from the internship:
+
+> A strong model score means very little if the validation process does not represent how the model will actually be used.
+
+---
+
+## Week 7 — Action Playbook
+
+📓 `w07_action_playbook.ipynb`
+
+I transformed validated model outputs into an actionable content decision framework.
+
+The playbook included:
+
+- Ranked actions
+- Reason codes
+- Archetype → action mapping
+- Decay / refresh insights
+- Intended use
+- Human-review rules
+- Cost/value considerations
+- Monitoring triggers
+- Retraining considerations
+- Cases that should **not** be automated
+
+The notebook also exports reusable outputs to:
+
+```text
+work/outputs/
+```
+
+This stage helped bridge the gap between **Machine Learning predictions and practical decision-making**.
+
+---
+
+## Week 8 — Capstone
+
+📓 `capstone.ipynb`
+
+The final stage brought the internship work together into a complete capstone.
+
+The capstone connects the full workflow:
+
+```text
+Research Question
+        ↓
+Data
+        ↓
+Features
+        ↓
+Baseline
+        ↓
+Model
+        ↓
+Validation
+        ↓
+Interpretation
+        ↓
+Recommendations
+        ↓
+Limitations
+        ↓
+Reproducible Results
+```
+
+The goal was to communicate not only what the model produced, but also:
+
+- Why the problem matters
+- How the analysis was performed
+- What the results mean
+- Where the model can fail
+- What should remain under human review
+- How the work can be reproduced
+
+---
+
+# 📓 Internship Notebooks
+
+| Week | Assignment | Notebook | Open |
 |---|---|---|---|
 | 1 | ML-02 | `w01_research_question` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/work/notebooks/w01_research_question.ipynb?flush_cache=true) |
 | 2 | ML-03 | `w02_ml_task_framing` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/work/notebooks/w02_ml_task_framing.ipynb?flush_cache=true) |
@@ -57,91 +259,161 @@ already pre-filled with your repo and the right path.
 | 7 | ML-10 | `w07_action_playbook` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/work/notebooks/w07_action_playbook.ipynb?flush_cache=true) |
 | 8 | ML-11 | `capstone` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/forhadmia231/flyrank-ml-internship/blob/main/work/notebooks/capstone.ipynb?flush_cache=true) |
 
-Badges not opening *your* copy? Colab's built-in opener always works: **File → Open notebook
-→ GitHub tab** → paste `github.com/you/your-repo` → pick the notebook.
-
-### Prefer local?
-
-```bash
-git clone <this-repo-url>
-cd flyrank-ml-internship-starter
-pip install -r requirements.txt          # or: uv pip install -r requirements.txt
-python scripts/run_all.py
-```
-
-That runs the whole pipeline on the bundled sample and writes results to `outputs/`.
-
 ---
 
-## What you get
+# 🧠 Machine Learning Pipeline
 
-| Path | What it is |
-|---|---|
-| `notebooks/` | Week 1–2 **first-win notebooks** (Colab-ready). Start here. |
-| `scripts/01–05` + `run_all.py` | The runnable reference pipeline: prepare → baseline → train → evaluate → PDF. |
-| `data/raw/content_refresh_anonymized.csv` | The anonymized starter dataset (~30k pages). |
-| `outputs/` | Example outputs so you can see the **target shape** (`model_report.md`, `refresh_queue_sample.csv`, `charts/`). |
-| `work/` | **Your space.** Lane experiments and your capstone live here — see `work/README.md`. |
-| `docs/` | The core docs + the data dictionary (see below). |
-
-### Read these (in `docs/`)
-
-1. **`ml-core-foundation-framework.md`** — the first-principles map of ML as a whole system. The backbone of the live sessions.
-2. **`ml-intern-dataset-and-lane-guide.md`** — how to use the data safely, the capstone workflow, and the analysis "lanes" you can pick from.
-3. **`intern-free-tooling-guide.md`** — the zero-budget tool stack (Python, Colab, free AI assistants). You never need to pay for anything.
-4. **`data-dictionary.md`** — all 44 columns: meaning, scale, and gotchas. Keep it open while you work.
-
----
-
-## The pipeline (what `run_all.py` does)
+The repository includes a reference ML pipeline:
 
 ```text
-01_prepare_features.py   clean + build the feature vector, define the label
-02_baseline_score.py     a transparent hand-rule "fix this first" score
-03_train_model.py        logistic regression, decision tree, random forest (client-holdout split)
-04_evaluate_and_export.py  ranked queue + charts + Markdown report
-05_build_pdf_report.py   a shareable PDF summary
+01_prepare_features.py
+        ↓
+02_baseline_score.py
+        ↓
+03_train_model.py
+        ↓
+04_evaluate_and_export.py
+        ↓
+05_build_pdf_report.py
 ```
 
-On the bundled sample, the learned model clearly beats the hand-written rule at picking the right
-pages to review first (**Precision@50 ≈ 0.24 → 0.74**; the model number can land 0.68–0.74
-depending on library versions — the ~3x lift is the point). The notebooks compute these numbers
-live, so they always reflect the current data and environment.
+### Pipeline Responsibilities
 
-**Teaching point:** the model is the capstone, but the *workflow* is the lesson —
-`problem framing → data cleaning → baseline → first model → evaluation → explainable recommendation`.
+**01 — Prepare Features**  
+Cleans the data, prepares the feature vector, and defines the target.
 
----
+**02 — Baseline Score**  
+Creates a transparent rule-based baseline.
 
-## Data safety (read `DATA_USE.md`)
+**03 — Train Model**  
+Trains Machine Learning models including Logistic Regression, Decision Tree, and Random Forest.
 
-- Only the small **anonymized** CSV ships here — no client names, domains, URLs, titles, or keywords.
-- **Never** add raw private client data to this repo or your fork. Need more data? Request an approved
-  release from your mentor — never export it yourself.
-- Don't paste client data into third-party AI tools.
-- Frame every result as **observed / measured / directional / decision-support** — never
-  "I predicted Google's algorithm."
+**04 — Evaluate & Export**  
+Evaluates model performance and generates ranked outputs, charts, and reports.
 
-The `.gitignore` blocks datasets by default, and CI fails any commit that includes a dataset.
+**05 — Build Report**  
+Creates a shareable summary of the analysis.
 
 ---
 
-## Assignments & schedule
+# 📂 Repository Structure
 
-Weekly assignments, live events, and the capstone live on **your portal board** (your
-enrollment email has your access link). This repo is the shared technical foundation they all
-build on — and the `skills/` folder here is the instruction library for your AI assistant
-(start at [skills/README.md](skills/README.md)).
-
-**First time with GitHub?** You need exactly four things (full walkthrough: [SETUP.md](SETUP.md)):
-1. A free account at github.com.
-2. Your own copy of this repo: **Use this template → Create a new repository** → public.
-   (One click — brings the notebooks, `work/`, and the CI leak-guard with it.)
-3. In Colab: *File → Save a copy in GitHub* — opened from your copy's badges, the dialog is
-   already pre-filled with your repo and path, so it's just OK (Colab handles auth).
-4. That's your submission repo — share its **github.com/you/your-repo** URL with Assignment 1
-   (never a colab.research.google.com or drive.google.com link).
+```text
+flyrank-ml-internship/
+│
+├── notebooks/
+│   └── First-look and introductory notebooks
+│
+├── work/
+│   ├── notebooks/
+│   │   ├── w01_research_question.ipynb
+│   │   ├── w02_ml_task_framing.ipynb
+│   │   ├── w03_data_contract.ipynb
+│   │   ├── w03_feature_leakage_check.ipynb
+│   │   ├── w04_signal_audit.ipynb
+│   │   ├── w04_baseline_score.ipynb
+│   │   ├── w05_model.ipynb
+│   │   ├── w06_validation_audit.ipynb
+│   │   ├── w07_action_playbook.ipynb
+│   │   └── capstone.ipynb
+│   │
+│   └── outputs/
+│
+├── scripts/
+├── outputs/
+├── docs/
+├── data/
+└── README.md
+```
 
 ---
 
-*Track leads: Mirza Ašćerić (ML) · Hole (data engineering). Code under MIT (see `LICENSE`); data under `DATA_USE.md`.*
+# 📊 Key Learning Outcomes
+
+Through this internship, I developed a stronger practical understanding of:
+
+- Machine Learning problem framing
+- Data exploration and preprocessing
+- Feature engineering
+- Data leakage prevention
+- Baseline development
+- Model training
+- Model comparison
+- Time-aware validation
+- Failure analysis
+- Model limitations
+- Ranked ML recommendations
+- Human-in-the-loop decision making
+- Monitoring and retraining considerations
+- Reproducible ML workflows
+- Technical documentation
+- Git & GitHub workflows
+- Communicating Machine Learning results
+
+---
+
+# 🔐 Data Safety
+
+The repository works with an **anonymized** slice of FlyRank search data.
+
+No private client names, domains, URLs, titles, keywords, credentials, or other confidential client information should be committed to this repository.
+
+Results should be interpreted as:
+
+**Observed • Measured • Directional • Decision-Support**
+
+rather than claims about predicting Google's algorithm.
+
+---
+
+# 💡 Biggest Takeaway
+
+The biggest lesson I gained from this internship is that Machine Learning is much more than training a model.
+
+A useful ML workflow requires:
+
+**Good problem framing + reliable data + leakage prevention + meaningful validation + explainable outputs + human judgment.**
+
+A model should support better decisions — not replace careful reasoning.
+
+---
+
+# 🛠️ Technologies Used
+
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45" alt="Python"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="45" alt="Pandas"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="45" alt="NumPy"/>
+  &nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" height="45" alt="Scikit-learn"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="45" alt="Jupyter"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="45" alt="Git"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="45" alt="GitHub"/>
+</p>
+
+---
+
+# 📬 Connect With Me
+
+**Md Forhad Mia**
+
+Machine Learning Engineer
+
+📧 Email: **forhadhossain1595@gmail.com**
+
+🔗 GitHub: **@forhadmia231**
+
+---
+
+<p align="center">
+  <b>From data → model → validation → action 🚀</b>
+</p>
+
+<p align="center">
+  Completed as part of the FlyRank Machine Learning Internship Program.
+</p>
