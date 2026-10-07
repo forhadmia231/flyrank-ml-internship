@@ -417,3 +417,9 @@ Machine Learning Engineer
 <p align="center">
   Completed as part of the FlyRank Machine Learning Internship Program.
 </p>
+
+
+<img width="1121" height="794" alt="image" src="https://github.com/user-attachments/assets/1a99f72a-ee47-439a-9537-65e0384adb42" />
+<img width="1114" height="784" alt="image" src="https://github.com/user-attachments/assets/82202eb5-0702-4510-bf37-c4b1fcefa0c7" />
+
+
